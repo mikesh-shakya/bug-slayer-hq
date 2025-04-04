@@ -11,8 +11,8 @@ const Navbar = () => {
       {/* Navigation Links */}
       <ul className="hidden md:flex space-x-8 text-sm font-medium">
         <li>
-          <a href="#" className="hover:text-purple-400 transition">
-            Dungeon
+          <a href="/dsa-dungeon" className="hover:text-purple-400 transition">
+            DSA Dungeon
           </a>
         </li>
         <li>
