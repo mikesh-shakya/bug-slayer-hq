@@ -1,34 +1,44 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <nav className="w-full bg-black text-white px-6 py-4 flex justify-between items-center shadow-md">
       {/* Logo / Site Title */}
-      <div className="text-2xl font-bold text-purple-400 tracking-wider">
-        BugSlayer HQ
-      </div>
+      <Link to={"/"}>
+        <div className="text-2xl cursor-pointer font-bold text-purple-400 tracking-wider">
+          BugSlayer HQ
+        </div>
+      </Link>
 
       {/* Navigation Links */}
       <ul className="hidden md:flex space-x-8 text-sm font-medium">
         <li>
-          <a href="/dsa-dungeon" className="hover:text-purple-400 transition">
-            DSA Dungeon
-          </a>
+          <Link to={"/dsa-dungeon"}>
+            <div className="hover:text-purple-400 transition">DSA Dungeon</div>
+          </Link>
         </li>
         <li>
-          <a href="#" className="hover:text-purple-400 transition">
-            System Design
-          </a>
+          <Link to={"/system-design"}>
+            <div className="hover:text-purple-400 transition">
+              System Design
+            </div>
+          </Link>
         </li>
         <li>
-          <a href="#" className="hover:text-purple-400 transition">
-            Blog
-          </a>
+          <Link to={"#"}>
+            <div className="hover:text-purple-400 transition">Blog</div>
+          </Link>
         </li>
         <li>
-          <a href="#" className="hover:text-purple-400 transition">
-            About
-          </a>
+          <Link to={"#"}>
+            <div className="hover:text-purple-400 transition">About</div>
+          </Link>
+        </li>
+        <li>
+          <Link to={"/arena"}>
+            <div className="hover:underline">Problem Arena</div>
+          </Link>
         </li>
       </ul>
 

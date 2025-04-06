@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <section className="relative h-[80vh] bg-gradient-to-br from-black via-gray-900 to-purple-900 text-white flex flex-col justify-center items-center px-6 text-center">
+    <section className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-purple-900 text-white flex flex-col justify-center items-center px-6 text-center">
       <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
         Every Developer Starts
         <br />
